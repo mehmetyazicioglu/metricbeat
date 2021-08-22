@@ -40,4 +40,9 @@ pipeline {
       }
     }
   }
+  post {
+    success {
+        build job: 'ELK_Stack'
+    }
+  }
 }
